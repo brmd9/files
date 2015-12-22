@@ -1,0 +1,9 @@
+if (cmd.getName().equalsIgnoreCase("Comando")) {
+    Player p = (Player)sender;
+    
+    if (!p.hasPermission("Comando.use")) {
+        p.sendMessage("§cErro: Somente ADMs!");
+        return true;
+    }
+    
+}
